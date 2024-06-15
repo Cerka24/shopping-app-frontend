@@ -53,7 +53,7 @@ const Footer = () => {
                 route.name === "notifications" && styles.active,
               ]}
             >
-              notification
+              Notifications
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -75,7 +75,7 @@ const Footer = () => {
             onPress={clearAllData}
           >
             <AntDesign style={styles.icon} name="logout" />
-            <Text style={styles.iconText}>Logout</Text>
+            <Text style={styles.iconText}>Logout </Text>
           </TouchableOpacity>
         </View>
       );

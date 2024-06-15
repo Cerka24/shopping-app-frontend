@@ -61,49 +61,116 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   container: {
-    marginVertical: 15,
-    marginHorizontal: 10,
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingHorizontal: 20,
   },
   title: {
-    fontSize: 18,
-    textAlign: "left",
-    paddingHorizontal: 10
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 10,
+    textAlign: 'center',
   },
-  desc: {
-    fontSize: 12,
-    textTransform: "capitalize",
-    textAlign: "justify",
-    marginVertical: 10,
-    paddingHorizontal: 10
+  price: {
+    fontSize: 18,
+    marginBottom: 10,
+    textAlign: 'center',
+  },
+  description: {
+    fontSize: 16,
+    marginBottom: 20,
+    textAlign: 'center',
   },
   btnContainer: {
-    flexDirection: "row",
-    justifyContent: "center",
-    alignItems: "center",
-    marginVertical: 20,
-    marginHorizontal: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   btnCart: {
-    width: 180,
     backgroundColor: "#000000",
     borderRadius: 5,
     height: 40,
     justifyContent: "center",
+    alignItems: "center",
+    paddingHorizontal: 20,
+    marginRight: 10,
   },
   btnCartText: {
     color: "#ffffff",
     fontWeight: "bold",
-    textAlign: "center",
     fontSize: 16,
+  },
+  quantityContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   btnQty: {
     backgroundColor: "lightgray",
+    borderRadius: 5,
     width: 40,
-    alignItems: "center",
-    marginHorizontal: 10,
+    height: 40,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginLeft: 10,
   },
   btnQtyText: {
     fontSize: 20,
   },
+  qtyText: {
+    fontSize: 18,
+    marginHorizontal: 10,
+  },
+  // image: {
+  //   height: 300,
+  //   width: "100%",
+  // },
+  // container: {
+  //     flex: 1,
+  //     justifyContent: 'center', // Center vertically
+  //     alignItems: 'center', // Center horizontally
+  //     marginVertical: 15,
+  //     marginHorizontal: 10,
+  // },
+  // title: {
+  //   fontSize: 18,
+  //   textAlign: "left",
+  //   paddingHorizontal: 10
+  // },
+  // desc: {
+  //   fontSize: 12,
+  //   textTransform: "capitalize",
+  //   textAlign: "justify",
+  //   marginVertical: 10,
+  //   paddingHorizontal: 10
+  // },
+  // btnContainer: {
+  //   flexDirection: "row",
+  //   justifyContent: "center",
+  //   alignItems: "center",
+  //   marginVertical: 20,
+  //   marginHorizontal: 10,
+  // },
+  // btnCart: {
+  //   width: 180,
+  //   backgroundColor: "#000000",
+  //   borderRadius: 5,
+  //   height: 40,
+  //   justifyContent: "center",
+  // },
+  // btnCartText: {
+  //   color: "#ffffff",
+  //   fontWeight: "bold",
+  //   textAlign: "center",
+  //   fontSize: 16,
+  // },
+  // btnQty: {
+  //   backgroundColor: "lightgray",
+  //   width: 40,
+  //   alignItems: "center",
+  //   marginHorizontal: 10,
+  // },
+  // btnQtyText: {
+  //   fontSize: 20,
+  // },
 });
 export default ProductDetails;
