@@ -40,8 +40,8 @@ const Register = ({ navigation }) => {
       <View style={styles.container}>
         <Image source={loginImage} style={styles.image} />
         <View style={styles.textContainer}>
-          <Text style={styles.boldText}>Hello! Welcome to <Text style={styles.gadgetShop}>GadgetShop</Text></Text>
-          <Text>Please sign up to create your account.</Text>
+          <Text style={styles.boldText}>Hello! Welcome to <Text style={styles.gadgetShop}>GadgetShop </Text> </Text>
+          <Text>Please sign up to create your account. </Text>
         </View>
         <InputBox
           style={styles.inputBox} 
@@ -87,10 +87,10 @@ const Register = ({ navigation }) => {
         />
         <View style={styles.btnContainer}>
           <TouchableOpacity style={styles.loginBtn} onPress={handleRegister}>
-            <Text style={styles.loginBtnText}>Sign Up</Text>
+            <Text style={styles.loginBtnText}>Sign Up </Text>
           </TouchableOpacity>
           <Text>You already have an account?
-            <Text style={styles.registerBtn} onPress={() => navigation.navigate("login")}> Click to sign in</Text>
+            <Text style={styles.registerBtn} onPress={() => navigation.navigate("login")}> Click to sign in. </Text>
           </Text>
         </View>
       </View>

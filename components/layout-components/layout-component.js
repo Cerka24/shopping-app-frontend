@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet,ScrollView } from "react-native";
 import React from "react";
 import Header from "./header-component";
 import { StatusBar } from "expo-status-bar";
@@ -7,11 +7,13 @@ import Footer from "./footer-component";
 
 const Layout = ({ children }) => {
     return (
+      <ScrollView>
         <>
         <StatusBar />
         <Header />
         <Text>{children} </Text>
         </> 
+        </ScrollView>
     );
 };
 

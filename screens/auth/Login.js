@@ -30,8 +30,8 @@ const Login = ({ navigation }) => {
     <View style={styles.container}>
       <Image source={loginImage} style={styles.image} />
       <View style={styles.textContainer}>
-        <Text style={styles.boldText}>Welcome Back!</Text>
-        <Text>Please sign in to continue to your account.</Text>
+        <Text style={styles.boldText}>Welcome Back! </Text>
+        <Text>Please sign in to continue to your account. </Text>
       </View>
       <InputBox
         placeholder={"Enter Your Email"} 
@@ -49,10 +49,10 @@ const Login = ({ navigation }) => {
       />
       <View style={styles.btnContainer}>
         <TouchableOpacity style={styles.loginBtn} onPress={handleLogin}>
-          <Text style={styles.loginBtnText}>Sign In</Text>
+          <Text style={styles.loginBtnText}>Sign In </Text>
         </TouchableOpacity>
         <Text>You don't have an account?
-          <Text style={styles.registerBtn} onPress={() => navigation.navigate("register")}> Click to sign up.</Text>
+          <Text style={styles.registerBtn} onPress={() => navigation.navigate("register")}> Click to sign up. </Text>
         </Text>
       </View>
     </View>

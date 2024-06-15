@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, ScrollView } from "react-native";
 import React from "react";
 import Layout from "../components/layout-components/layout-component";
 import Categories from "../components/category/categories";
@@ -8,14 +8,13 @@ import Footer from "../components/layout-components/footer-component";
 
 const Landing = () => {
     return (
-        <Layout>
-            <View style={styles.container}>
-                <Categories />
-                <Products/>
-                <Footer style={styles.footer}/>
-            </View>
-            <Text>Landing Screen </Text>
-        </Layout>
+            <Layout> 
+                <View style={styles.container}>
+                    <Categories />
+                    <Products/>  
+                    <Footer style={styles.footer}/>
+                </View>
+            </Layout>
     );
 };
 
@@ -23,7 +22,6 @@ export default Landing;
 
 const styles = StyleSheet.create({
     container: {
-        paddingBottom: 100,
         backgroundColor: "#ffffff",
     },
     footer: {
@@ -36,6 +34,7 @@ const styles = StyleSheet.create({
         borderColor: "lightgray",
         position: "absolute",
         bottom: 0,
-        padding: 10,
+        // padding: 10,
+        
       },
   });

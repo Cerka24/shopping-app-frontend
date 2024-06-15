@@ -14,6 +14,7 @@ const Profile = ({ navigation }) => {
   const [address, setAddress] = useState('');
   const [city, setCity] = useState('');
   const [phone, setPhone] = useState('');
+  const profileImage = require('../assets/avatar.png');
 
   useEffect(() => {
     const loadUserData = async () => {
@@ -52,7 +53,7 @@ const Profile = ({ navigation }) => {
     <ScrollView contentContainerStyle={styles.scrollContainer}>
       <View style={styles.container}>
         <View style={styles.imageContainer}>
-          <Image source={{ uri: userData.profilePic }} style={styles.image} />
+        <Image source={profileImage} style={styles.image} />
           <View style={styles.centeredTextContainer}>
             <Text style={styles.name}>
               Hi
@@ -108,10 +109,10 @@ const Profile = ({ navigation }) => {
                   autoComplete={"tel"}
                 />
                 <TouchableOpacity style={styles.btnContainer} onPress={handleSave}>
-                  <Text style={styles.saveButton}>Save</Text>
+                  <Text style={styles.saveButton}>Save </Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.btnContainer} onPress={() => setEditing(false)}>
-                  <Text style={styles.btnUpdateText}>Cancel</Text>
+                  <Text style={styles.btnUpdateText}>Cancel </Text>
                 </TouchableOpacity>
               </>
             ) : (
@@ -135,7 +136,7 @@ const Profile = ({ navigation }) => {
                 onPress={() => navigation.navigate("notifications")}
               >
                 <AntDesign style={styles.btnIcon} name="bells" />
-                <Text style={styles.btnText}>Notification </Text>
+                <Text style={styles.btnText}>Notifications </Text>
               </TouchableOpacity>
               <TouchableOpacity
                 style={styles.btn}
@@ -193,10 +194,9 @@ const styles = StyleSheet.create({
       btnContainer: {
         width: "90%",
         padding: 20,
-        paddingHorizontal: 75,
+        paddingHorizontal: 50,
         backgroundColor: "#ffffff",
         borderRadius: 10,
-        elevation: 5,
       },
     heading: {
       fontSize: 20,
